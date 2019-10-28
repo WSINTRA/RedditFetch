@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { HeroService } from './hero.service';
+import { RedditdataService } from './redditdata.service';
 
-describe('HeroService', () => {
+describe('RedditdataService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: HeroService = TestBed.get(HeroService);
+    const service: RedditdataService = TestBed.get(RedditdataService);
     expect(service).toBeTruthy();
   });
 });
