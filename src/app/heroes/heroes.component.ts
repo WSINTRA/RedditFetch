@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import  { Hero } from '../hero';
-import { HEROES } from '../mock-heroes';
+import { HeroService } from '../hero.service';
 
 @Component({
   selector: 'app-heroes',
@@ -14,19 +14,25 @@ export class HeroesComponent implements OnInit {
   	name: 'Windstorm'
   };
 
-  heroes = HEROES;
+  heroes: Hero[];
   
   selectedHero: Hero;
+
+   getHeroes(): void {
+    this.heroService.getHeroes()
+        .subscribe(heroes => this.heroes = heroes);
+  }
+  
 
   onSelect(hero: Hero): void {
   this.selectedHero = hero;
   }
     
-  constructor() { }
+  constructor(private heroService: HeroService) { }
 
   ngOnInit() {
-  fetch("https://www.reddit.com/r/reefer.json").then(r => r.json()).then(r => {
-  console.log(r) });
+  this.getHeroes();
+  
   }
 
 }
