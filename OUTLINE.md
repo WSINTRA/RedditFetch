@@ -13,8 +13,8 @@ How to interface with Reddit. Build Angular App using TypeScript.
 Break problem down into simple steps..
 
 Take 5 minute tutorial on Typescript [*]
-Build simple Angular App
-Install Angular Cli using npm install -g @angular/cli
+Build simple Angular App [*]
+Install Angular Cli using npm install -g @angular/cli [*]
 Simple steps....
 Build a new Angular app using generate.
 Create a new Git repository.

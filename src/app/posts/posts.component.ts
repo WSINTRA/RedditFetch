@@ -36,7 +36,7 @@ export class PostsComponent implements OnInit {
       ).catch(error=> this.handleError(error)
       );
   }
-  searchPosts(query: string){
+  searchPosts(query: string){//string gets white space removed in data.service fetch request
     return this._data.getPosts(query).then(res=> res.json()).then(
       response=> this.handleFetch(response)
       ).catch(error=> this.handleError(error)

@@ -1,27 +1,34 @@
 # BbotInterview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
+download code
+cd into directory
+run npm install
+run npm run electron
 
-## Development server
+Specifications given....
+Design and Create an Electron App using Angular that allows a user to type in their favorite subreddit to a form field and then displays the latest post from that subreddit and the comments for that post.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Requirements
+Use Angular 6 or greater and Typescript. Vanilla Javascript will not be accepted.
+This is designed to test your ability to look up, use, and combine existing resources to build your own app. Feel free to use google, official documentation, and tutorials to learn frameworks.
+Post the code to a repository on your Github account.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Notes..
 
-## Build
+Important points to research. How to build an Electron App. How to convert an Angular App into an Electron App.
+How to interface with Reddit. Build Angular App using TypeScript.
+Break problem down into simple steps..
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Take 5 minute tutorial on Typescript [*]
+Build simple Angular App [*]
+Install Angular Cli using npm install -g @angular/cli [*]
+Build a new Angular app using generate. [*]
+Create a new Git repository. [*]
+Fetch a subreddit from the reddit APi and display it along with comments. [*]
 
-## Running unit tests
+Create an input form field and a submit button. [*]
+Remove the subreddit information from the display. [*]
+Hook up the input form to the reddit API. [*]
+Hook up the submit button to complete the fetch request. [*]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

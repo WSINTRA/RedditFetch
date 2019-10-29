@@ -19,6 +19,6 @@ export class DataService {
   }
   getPosts(query){
   	// return this._http.get(this.API_URL + query).map(res=> res.json());
-  	return fetch(this.API_URL +"/r/"+ query + ".json");
+  	return fetch(this.API_URL +"/r/"+ query.split(' ').join('') + ".json");
   }
 }
