@@ -9,15 +9,29 @@ import { Observable } from 'rxjs';
 })
 export class PostsComponent implements OnInit {
   
-  posts:Object;
-  
-  constructor(private data:DataService ) { }
+  posts:any[];
+  postsFound: boolean = false;
+
+  handleFetch(res){
+    this.postsFound = true;
+    this.posts = res.data.children;
+    console.log(res.data.children);
+  }
+
+  handleError(error){
+    console.log(error)
+  }
+  constructor(private _data:DataService ) { }
+
+  searchPosts(query: string){
+    return this._data.getPosts(query).then(res=> res.json()).then(
+      response=> this.handleFetch(response)
+      ).catch(error=> this.handleError(error)
+      );
+      
+  }
   
   ngOnInit() {
-  	
-  this.data.getPosts().then(r => r.json()).then((data)=>{
-  	this.posts = data;
-  });
-  }
+   }
 
 }

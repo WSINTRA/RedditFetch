@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchTermComponent implements OnInit {
   
-  search = ""
+  
   constructor() { }
 
   ngOnInit() {

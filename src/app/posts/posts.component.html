@@ -1,2 +1,6 @@
+<input class="search" [(ngModel)]="searchQuery">
+<button (click)='searchPosts(searchQuery)'>Search</button>
 
-<p *ngFor="let post of posts.data.children">{{post.data.title}}</p>
+<div *ngFor="let post of posts" class="post-container">
+	<p>Post Title: {{post.data.title}}</p>
+</div>
