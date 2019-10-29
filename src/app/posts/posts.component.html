@@ -1,6 +1,6 @@
 <input class="search" [(ngModel)]="searchQuery">
 <button (click)='searchPosts(searchQuery)'>Search</button>
-
+<div class="grid-container">
 <div *ngFor="let post of posts" class="post-container">
 	<h2>Post: {{post.data.title}}</h2>
 	 <h3>({{post.data.num_comments}}) Comments</h3>
@@ -11,5 +11,5 @@
 	 	</div>
 	 </div>
 
-
+</div>
 </div>
