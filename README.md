@@ -1,8 +1,11 @@
 # BbotInterview
 
 download code
+
 cd into directory
+
 run npm install
+
 run npm run electron
 
 Specifications given....
@@ -21,14 +24,22 @@ How to interface with Reddit. Build Angular App using TypeScript.
 Break problem down into simple steps..
 
 Take 5 minute tutorial on Typescript [*]
+
 Build simple Angular App [*]
+
 Install Angular Cli using npm install -g @angular/cli [*]
+
 Build a new Angular app using generate. [*]
+
 Create a new Git repository. [*]
+
 Fetch a subreddit from the reddit APi and display it along with comments. [*]
 
 Create an input form field and a submit button. [*]
+
 Remove the subreddit information from the display. [*]
+
 Hook up the input form to the reddit API. [*]
+
 Hook up the submit button to complete the fetch request. [*]
 
