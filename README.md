@@ -8,16 +8,16 @@ run npm install
 
 run npm run electron
 
-Specifications given....
+### Specifications given....
 Design and Create an Electron App using Angular that allows a user to type in their favorite subreddit to a form field and then displays the latest post from that subreddit and the comments for that post.
 
-Requirements
+### Requirements
 Use Angular 6 or greater and Typescript. Vanilla Javascript will not be accepted.
 This is designed to test your ability to look up, use, and combine existing resources to build your own app. Feel free to use google, official documentation, and tutorials to learn frameworks.
 Post the code to a repository on your Github account.
 
 
-Notes..
+## Notes..
 
 Important points to research. How to build an Electron App. How to convert an Angular App into an Electron App.
 How to interface with Reddit. Build Angular App using TypeScript.
